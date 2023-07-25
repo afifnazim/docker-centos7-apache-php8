@@ -17,4 +17,6 @@ docker run -d --name web-server --privileged=true -p 8080:80 -p 8443:443 apache-
 ```
 In the above comamnd we can change the <b><i>name</i></b> of the <b><i>container</i></b> as per need. 
 
-We can expose the ports using <i><b> -p </i></b> and redirect traffic from egress to ingress port. 
+We can expose the ports using <i><b> -p </i></b> and redirect traffic from egress to ingress port. But we also need to define the <i><b>EXPOSE</i></b> parameter in the docker file to ensure the container listens to those ports. 
+
+In our case, we exposed two ports in the dockerfile on 80 or http traffic and another is 443 or https traffic. 
