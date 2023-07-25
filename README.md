@@ -15,4 +15,6 @@ To create or run a container using the image we created, we can use the below co
 ```
 docker run -d --name web-server --privileged=true -p 8080:80 -p 8443:443 apache-php
 ```
-In the above comamnd we can change the <b><i>name</i></b> of the <b><i>container</i></b> as per need. We can expose the ports using <i><b> -p </i></b> and use the image name at last.  
+In the above comamnd we can change the <b><i>name</i></b> of the <b><i>container</i></b> as per need. 
+
+We can expose the ports using <i><b> -p </i></b> and redirect traffic from egress to ingress port. 
