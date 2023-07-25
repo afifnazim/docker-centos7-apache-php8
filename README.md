@@ -20,3 +20,13 @@ In the above comamnd we can change the <b><i>name</i></b> of the <b><i>container
 We can expose the ports using <i><b> -p </i></b> and redirect traffic from egress to ingress port. But we also need to define the <i><b>EXPOSE</i></b> parameter in the docker file to ensure the container listens to those ports. 
 
 In our case, we exposed two ports in the dockerfile on 80 or http traffic and another is 443 or https traffic. 
+
+## Test the container
+We can test the container for port 80 by going to the localhost site in the browser -
+```
+http://localhost:8080
+```
+Or by using the IP Address of the server - 
+```
+http://IPADDRESS:8080
+```
