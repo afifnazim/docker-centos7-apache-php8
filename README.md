@@ -9,3 +9,10 @@ Create a docker image using below command
 docker build -t apache-php .
 ```
 apache-php is the name of the docker image. You can change the <i>image name</i> as per your project. 
+
+## Creating a docker container
+To create or run a container using the image we created, we can use the below command
+```
+docker run -d --name web-server --privileged=true -p 8080:80 -p 8443:443 apache-php
+```
+In the above comamnd we can change the <b><i>name</i></b> of the container as per need. 
